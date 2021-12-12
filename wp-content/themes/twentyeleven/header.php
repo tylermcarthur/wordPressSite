@@ -24,7 +24,8 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<!-- ^this is currently working as making the proper requests as page loads but seems to overload the database, working on solution -->
 <title>
 <?php
 	// Print the <title> tag based on what is being viewed.
