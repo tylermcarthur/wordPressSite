@@ -295,6 +295,7 @@ endif; // twentyeleven_setup()
  *
  * @since Twenty Eleven 2.9
  */
+wp_register_style("custom",get_template_directory_uri(),'/custom.css','','1.0.0')/*declaring the custom css, what it is and where it is */
 function twentyeleven_scripts_styles() {
 	// Theme block stylesheet.
 	wp_enqueue_style( 'twentyeleven-block-style', get_template_directory_uri() . '/blocks.css', array(), '20190102' );
@@ -309,6 +310,7 @@ add_action( 'wp_enqueue_scripts', 'twentyeleven_scripts_styles' );
 function twentyeleven_block_editor_styles() {
 	// Block styles.
 	wp_enqueue_style( 'twentyeleven-block-editor-style', get_template_directory_uri() . '/editor-blocks.css', array(), '20201208' );
+	wp_enqueue_style('custom')/*Invoking the css file */
 }
 add_action( 'enqueue_block_editor_assets', 'twentyeleven_block_editor_styles' );
 
