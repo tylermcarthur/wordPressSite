@@ -24,6 +24,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>
 <?php
 	// Print the <title> tag based on what is being viewed.
